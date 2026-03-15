@@ -176,4 +176,22 @@ function animateCounter(el, target, suffix = '') {
   const timer = setInterval(() => {
     current += step;
     if (current >= target) { current = target; clearInterval(timer); }
-    el.textContent =
+    el.textContent = Math.floor(current) + suffix;
+  }, 25);
+}
+
+const statsObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      document.querySelectorAll('.stat-num').forEach(el => {
+        const val = parseInt(el.dataset.val);
+        const suffix = el.dataset.suffix || '';
+        animateCounter(el, val, suffix);
+      });
+      statsObserver.disconnect();
+    }
+  });
+}, { threshold: 0.5 });
+
+const statsEl = document.querySelector('.hero-stats');
+if (statsEl) statsObserver.observe(statsEl);
