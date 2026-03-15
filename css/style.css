@@ -65,9 +65,11 @@ nav {
 
 .nav-logo {
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.5px;
   color: var(--white);
+  display: flex;
+  align-items: center;
 }
 
 .nav-logo span { color: var(--accent); }
@@ -729,8 +731,11 @@ footer {
 
 .footer-logo {
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .footer-logo span { color: var(--accent); }
