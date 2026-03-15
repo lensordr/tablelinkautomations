@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tablelink Automations | Software & Automation Studio</title>
+  <title>Automations Studio | Software & Automation Studio</title>
   <meta name="description" content="We build automation systems, custom web applications, and business tools that eliminate repetitive work and scale your operations." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +25,7 @@
       <rect x="2" y="2" width="28" height="28" rx="7" fill="none" stroke="url(#navgrad)" stroke-width="3.5"/>
       <rect x="18" y="14" width="24" height="24" rx="6" fill="url(#navgrad)" opacity="0.9"/>
     </svg>
-    <span style="color:#ffffff;font-weight:800;font-size:1.2rem;letter-spacing:-0.5px;">Tablelink<span style="color:#6c63ff;">.</span></span>
+    <span style="color:#ffffff;font-weight:800;font-size:1.2rem;letter-spacing:-0.5px;">Automations Studio<span style="color:#6c63ff;">.</span></span>
   </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
@@ -154,14 +154,14 @@
       </div>
     </div>
 
-    <!-- Hotel / TableLink -->
+    <!-- Hotel / Automations Studio -->
     <div class="project-card fade-up" data-category="tool" onclick="openModal('hotel')">
       <div class="project-thumb project-thumb-hotel">
         <div class="project-thumb-icon">🏨</div>
         <span class="project-tag">Business Tool</span>
       </div>
       <div class="project-body">
-        <h3>TableLink Hotel & Restaurant Platform</h3>
+        <h3>Automations Studio Hotel & Restaurant Platform</h3>
         <p>A multi-tenant QR ordering platform for hotels and restaurants. Guests scan a QR code to order. Staff manage everything from a live dashboard. Menu upload via Excel.</p>
         <div class="project-stack">
           <span class="stack-tag">FastAPI</span>
@@ -284,7 +284,7 @@
 <section id="case-study">
   <div class="section-header">
     <span class="section-label">Featured Case Study</span>
-    <h2 class="section-title">How we scaled a barbershop<br />to 10,000+ bookings/day</h2>
+    <h2 class="section-title">How we scaled a barbershop<br />to 100+ bookings/day</h2>
   </div>
   <div class="case-study-inner">
     <div class="case-study-content">
@@ -413,10 +413,48 @@
         <rect x="2" y="2" width="28" height="28" rx="7" fill="none" stroke="url(#footergrad)" stroke-width="3.5"/>
         <rect x="18" y="14" width="24" height="24" rx="6" fill="url(#footergrad)" opacity="0.9"/>
       </svg>
-      <span style="color:#ffffff;font-weight:800;font-size:1.1rem;letter-spacing:-0.5px;">Tablelink<span style="color:#6c63ff;">.</span></span>
+      <span style="color:#ffffff;font-weight:800;font-size:1.1rem;letter-spacing:-0.5px;">Automations Studio<span style="color:#6c63ff;">.</span></span>
     </div>
     <ul class="footer-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#process">Process</a></li>
-      <li><a href="#contact">Con
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <p class="footer-copy">© 2025 Automations Studio. All rights reserved. Built with precision.</p>
+</footer>
+
+<!-- ===== PROJECT MODAL ===== -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <button class="modal-close">✕</button>
+    <div class="modal-tag" id="modal-tag"></div>
+    <h2 id="modal-title"></h2>
+    <a id="modal-live" href="" target="_blank" style="display:inline-flex;align-items:center;gap:0.4rem;background:var(--accent);color:white;padding:0.5rem 1.2rem;border-radius:8px;font-size:0.85rem;font-weight:600;margin-bottom:1.5rem;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Visit Live Site ↗</a>
+    <div class="modal-section">
+      <h4>The Problem</h4>
+      <p id="modal-problem"></p>
+    </div>
+    <div class="modal-section">
+      <h4>Our Solution</h4>
+      <p id="modal-solution"></p>
+    </div>
+    <div class="modal-section">
+      <h4>Key Features</h4>
+      <ul class="modal-features" id="modal-features"></ul>
+    </div>
+    <div class="modal-section">
+      <h4>Results</h4>
+      <p id="modal-results"></p>
+    </div>
+    <div class="modal-section">
+      <h4>Tech Stack</h4>
+      <div class="modal-stack" id="modal-stack"></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

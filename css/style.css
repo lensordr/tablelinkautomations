@@ -900,4 +900,6 @@ footer {
     gap: 1.2rem;
   }
   .form-row { grid-template-columns: 1fr; }
-  
+  .hero-stats { gap: 1.5rem; }
+  .footer-inner { flex-direction: column; text-align: center; }
+}
