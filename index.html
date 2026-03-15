@@ -330,21 +330,21 @@
       <div class="form-row">
         <div class="form-group">
           <label>Full Name *</label>
-          <input type="text" placeholder="John Smith" required />
+          <input type="text" name="name" placeholder="John Smith" required />
         </div>
         <div class="form-group">
           <label>Email Address *</label>
-          <input type="email" placeholder="john@company.com" required />
+          <input type="email" name="email" placeholder="john@company.com" required />
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
           <label>Company / Business</label>
-          <input type="text" placeholder="Your company name" />
+          <input type="text" name="company" placeholder="Your company name" />
         </div>
         <div class="form-group">
           <label>Budget Range</label>
-          <select>
+          <select name="budget">
             <option value="">Select budget</option>
             <option>Under €1,000</option>
             <option>€1,000 – €5,000</option>
@@ -357,7 +357,7 @@
       <div class="form-row">
         <div class="form-group">
           <label>Project Type *</label>
-          <select required>
+          <select name="project_type" required>
             <option value="">Select type</option>
             <option>Workflow Automation</option>
             <option>Web Application</option>
@@ -369,7 +369,7 @@
         </div>
         <div class="form-group">
           <label>Timeline</label>
-          <select>
+          <select name="timeline">
             <option value="">Select timeline</option>
             <option>ASAP</option>
             <option>1 – 2 months</option>
@@ -380,7 +380,7 @@
       </div>
       <div class="form-group">
         <label>Project Description *</label>
-        <textarea placeholder="Describe what you want to build, the problem you're solving, and any specific requirements..." required></textarea>
+        <textarea name="message" placeholder="Describe what you want to build, the problem you're solving, and any specific requirements..." required></textarea>
       </div>
       <button type="submit" class="form-submit">Send Message →</button>
     </form>
