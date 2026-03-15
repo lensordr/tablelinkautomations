@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Inter, sans-serif; background: #0a0a0f; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; gap: 3rem; padding: 3rem; }
+    .label { color: #7a7a9a; font-size: 0.75rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem; text-align: center; }
+    .box { display: flex; align-items: center; justify-content: center; padding: 3rem 4rem; border-radius: 16px; }
+    .dark { background: #0a0a0f; border: 1px solid rgba(255,255,255,0.07); }
+    .light { background: #ffffff; border: 1px solid #eee; }
+    .purple { background: #6c63ff; }
+  </style>
+</head>
+<body>
+
+  <div>
+    <div class="label">Dark Background</div>
+    <div class="box dark">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+        <defs>
+          <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#6c63ff"/>
+            <stop offset="100%" style="stop-color:#a78bfa"/>
+          </linearGradient>
+        </defs>
+        <rect x="4" y="14" width="28" height="28" rx="7" fill="none" stroke="url(#g1)" stroke-width="3.5"/>
+        <rect x="20" y="18" width="20" height="20" rx="5" fill="url(#g1)" opacity="0.9"/>
+        <text x="52" y="38" font-family="Inter,sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#ffffff">Tablelink<tspan fill="#6c63ff">.</tspan></text>
+      </svg>
+    </div>
+  </div>
+
+  <div>
+    <div class="label">Light Background</div>
+    <div class="box light">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+        <defs>
+          <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#6c63ff"/>
+            <stop offset="100%" style="stop-color:#a78bfa"/>
+          </linearGradient>
+        </defs>
+        <rect x="4" y="14" width="28" height="28" rx="7" fill="none" stroke="url(#g2)" stroke-width="3.5"/>
+        <rect x="20" y="18" width="20" height="20" rx="5" fill="url(#g2)" opacity="0.9"/>
+        <text x="52" y="38" font-family="Inter,sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#111111">Tablelink<tspan fill="#6c63ff">.</tspan></text>
+      </svg>
+    </div>
+  </div>
+
+  <div>
+    <div class="label">Icon Only</div>
+    <div class="box dark">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="80" height="80">
+        <defs>
+          <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#6c63ff"/>
+            <stop offset="100%" style="stop-color:#a78bfa"/>
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="28" height="28" rx="7" fill="none" stroke="url(#g3)" stroke-width="3.5"/>
+        <rect x="18" y="14" width="24" height="24" rx="6" fill="url(#g3)" opacity="0.9"/>
+      </svg>
+    </div>
+  </div>
+
+  <div>
+    <div class="label">Purple Background</div>
+    <div class="box purple">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+        <rect x="4" y="14" width="28" height="28" rx="7" fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="3.5"/>
+        <rect x="20" y="18" width="20" height="20" rx="5" fill="white" opacity="0.9"/>
+        <text x="52" y="38" font-family="Inter,sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="#ffffff">Tablelink<tspan fill="rgba(255,255,255,0.6)">.</tspan></text>
+      </svg>
+    </div>
+  </div>
+
+</body>
+</html>
