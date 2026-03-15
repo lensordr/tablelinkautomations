@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tablelink Automations | Software & Automation Studio</title>
+  <meta name="description" content="We build automation systems, custom web applications, and business tools that eliminate repetitive work and scale your operations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <a href="#hero" class="nav-logo">Tablelink<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#industries">Industries</a></li>
+    <li><a href="#contact" class="nav-cta">Start a Project</a></li>
+  </ul>
+  <div class="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-glow"></div>
+  <div>
+    <div class="hero-badge">Software & Automation Studio</div>
+    <h1 class="hero-title">
+      We build software<br />that works<br />
+      <span class="gradient-text">while you sleep.</span>
+    </h1>
+    <p class="hero-sub">
+      Custom automation systems, web applications, and business tools built for real businesses that want to eliminate repetitive work and scale without friction.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">View Our Work</a>
+      <a href="#contact" class="btn-secondary">Start a Project →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num" data-val="3" data-suffix="">3</div>
+        <div class="stat-label">Products Shipped</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-val="10000" data-suffix="+">10,000+</div>
+        <div class="stat-label">Daily Transactions Handled</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-val="99" data-suffix=".9%">99.9%</div>
+        <div class="stat-label">Uptime Delivered</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-val="2" data-suffix="">2</div>
+        <div class="stat-label">Industries Served</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="section-header centered">
+    <span class="section-label">What We Do</span>
+    <h2 class="section-title">End-to-end software, built for your business</h2>
+    <p class="section-sub">From automating a single workflow to building a full platform. We design, develop, and deploy.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card fade-up">
+      <div class="service-icon">⚙️</div>
+      <h3>Workflow Automation</h3>
+      <p>We identify the repetitive tasks draining your team's time and replace them with automated systems that run 24/7 without errors.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-icon">🌐</div>
+      <h3>Custom Web Applications</h3>
+      <p>Full-stack web apps tailored to your exact business logic: booking systems, ordering platforms, dashboards, and more.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-icon">🛠️</div>
+      <h3>Internal Business Tools</h3>
+      <p>Admin panels, management dashboards, and internal tools that give your team full control over operations in real time.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-icon">📊</div>
+      <h3>Data & Analytics</h3>
+      <p>Turn raw business data into actionable insights with custom reporting dashboards, revenue tracking, and performance metrics.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-icon">📱</div>
+      <h3>QR & Mobile Experiences</h3>
+      <p>Contactless ordering, QR-based booking, and mobile-first interfaces that work instantly. No app download required.</p>
+    </div>
+    <div class="service-card fade-up">
+      <div class="service-icon">🔗</div>
+      <h3>System Integrations</h3>
+      <p>Connect your existing tools like email, payments, CRMs, and third-party APIs into one seamless automated workflow.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="section-header">
+    <span class="section-label">Our Work</span>
+    <h2 class="section-title">Projects we've shipped</h2>
+    <p class="section-sub">Real products, running in production, solving real business problems.</p>
+  </div>
+  <div class="projects-filter">
+    <button class="filter-btn active" data-filter="all">All Projects</button>
+    <button class="filter-btn" data-filter="webapp">Web Applications</button>
+    <button class="filter-btn" data-filter="tool">Business Tools</button>
+    <button class="filter-btn" data-filter="automation">Automation</button>
+  </div>
+  <div class="projects-grid">
+
+    <!-- Barbershop -->
+    <div class="project-card fade-up" data-category="webapp" onclick="openModal('barbershop')">
+      <div class="project-thumb project-thumb-barber">
+        <img src="images/MinoreBarber/Screenshot 2026-03-15 at 09.03.05.png" alt="Minore Barbershop" style="width:100%;height:100%;object-fit:cover;opacity:0.85;" />
+        <span class="project-tag">Web App</span>
+      </div>
+      <div class="project-body">
+        <h3>Minore Barbershop Appointment System</h3>
+        <p>A full-stack appointment platform for a multi-location barbershop chain. QR booking, real-time admin dashboard, VIP access system, and automated email notifications.</p>
+        <div class="project-stack">
+          <span class="stack-tag">FastAPI</span>
+          <span class="stack-tag">PostgreSQL</span>
+          <span class="stack-tag">SSE</span>
+          <span class="stack-tag">CI/CD</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0.5rem;">
+          <span class="project-link" onclick="event.stopPropagation()">View Case Study <span>→</span></span>
+          <a href="https://www.minorebarber.com/" target="_blank" onclick="event.stopPropagation()" style="font-size:0.82rem;color:var(--muted);border:1px solid var(--border);padding:0.3rem 0.7rem;border-radius:6px;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent2)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">Live Site ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hotel / TableLink -->
+    <div class="project-card fade-up" data-category="tool" onclick="openModal('hotel')">
+      <div class="project-thumb project-thumb-hotel">
+        <div class="project-thumb-icon">🏨</div>
+        <span class="project-tag">Business Tool</span>
+      </div>
+      <div class="project-body">
+        <h3>TableLink Hotel & Restaurant Platform</h3>
+        <p>A multi-tenant QR ordering platform for hotels and restaurants. Guests scan a QR code to order. Staff manage everything from a live dashboard. Menu upload via Excel.</p>
+        <div class="project-stack">
+          <span class="stack-tag">FastAPI</span>
+          <span class="stack-tag">Multi-Tenant</span>
+          <span class="stack-tag">QR System</span>
+          <span class="stack-tag">Real-Time</span>
+        </div>
+        <span class="project-link">View Case Study <span>→</span></span>
+      </div>
+    </div>
+
+    <!-- RedMarbs -->
+    <div class="project-card fade-up" data-category="webapp" onclick="openModal('redmarbs')">
+      <div class="project-thumb project-thumb-agency" style="padding:2rem;">
+        <img src="images/RedMarbs/bunny_vector.png" alt="RedMarbs" style="max-height:130px;width:auto;object-fit:contain;filter:brightness(1.1);" />
+        <span class="project-tag">Web App</span>
+      </div>
+      <div class="project-body">
+        <h3>RedMarbs Model Agency Platform</h3>
+        <p>A luxury modeling agency platform with public model portfolios, advanced filtering, client booking forms, and a full admin panel for managing models, bookings, and applications.</p>
+        <div class="project-stack">
+          <span class="stack-tag">FastAPI</span>
+          <span class="stack-tag">Bootstrap 5</span>
+          <span class="stack-tag">Admin Panel</span>
+          <span class="stack-tag">File Upload</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:0.5rem;">
+          <span class="project-link" onclick="event.stopPropagation()">View Case Study <span>→</span></span>
+          <a href="https://www.redmarbs.com/" target="_blank" onclick="event.stopPropagation()" style="font-size:0.82rem;color:var(--muted);border:1px solid var(--border);padding:0.3rem 0.7rem;border-radius:6px;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent2)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">Live Site ↗</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section id="process">
+  <div class="section-header centered">
+    <span class="section-label">How We Work</span>
+    <h2 class="section-title">From idea to production in weeks</h2>
+    <p class="section-sub">A clear, structured process so you always know where your project stands.</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step fade-up">
+      <div class="step-num">1</div>
+      <h3>Discovery Call</h3>
+      <p>We listen to your business problem, understand your workflow, and define exactly what needs to be built.</p>
+    </div>
+    <div class="process-step fade-up">
+      <div class="step-num">2</div>
+      <h3>Architecture & Design</h3>
+      <p>We design the system architecture, database schema, and UI/UX before writing a single line of code.</p>
+    </div>
+    <div class="process-step fade-up">
+      <div class="step-num">3</div>
+      <h3>Development</h3>
+      <p>Agile sprints with regular demos. You see progress every week, not just at the end.</p>
+    </div>
+    <div class="process-step fade-up">
+      <div class="step-num">4</div>
+      <h3>Testing & QA</h3>
+      <p>Automated tests, security scans, and real-world load testing before anything goes live.</p>
+    </div>
+    <div class="process-step fade-up">
+      <div class="step-num">5</div>
+      <h3>Deployment</h3>
+      <p>We handle hosting, CI/CD pipelines, monitoring, and zero-downtime deployments.</p>
+    </div>
+    <div class="process-step fade-up">
+      <div class="step-num">6</div>
+      <h3>Support & Growth</h3>
+      <p>Post-launch support, performance monitoring, and feature iterations as your business grows.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INDUSTRIES ===== -->
+<section id="industries">
+  <div class="section-header centered">
+    <span class="section-label">Industries</span>
+    <h2 class="section-title">Built for businesses that move fast</h2>
+    <p class="section-sub">We specialize in industries where speed, reliability, and real-time data matter most.</p>
+  </div>
+  <div class="industries-grid">
+    <div class="industry-card fade-up">
+      <div class="industry-icon">✂️</div>
+      <h3>Barbershops & Salons</h3>
+      <p>Appointment systems, staff management, revenue tracking, and QR booking. Everything a modern barbershop needs.</p>
+    </div>
+    <div class="industry-card fade-up">
+      <div class="industry-icon">🏨</div>
+      <h3>Hotels & Hospitality</h3>
+      <p>Room service ordering, table management, guest-facing QR menus, and live staff dashboards.</p>
+    </div>
+    <div class="industry-card fade-up">
+      <div class="industry-icon">🍽️</div>
+      <h3>Restaurants & Cafés</h3>
+      <p>Digital menus, QR ordering, kitchen dashboards, and menu management via simple file uploads.</p>
+    </div>
+    <div class="industry-card fade-up">
+      <div class="industry-icon">👑</div>
+      <h3>Agencies & Studios</h3>
+      <p>Portfolio platforms, booking management, client portals, and profile management systems for creative agencies.</p>
+    </div>
+    <div class="industry-card fade-up">
+      <div class="industry-icon">🏢</div>
+      <h3>Small & Medium Business</h3>
+      <p>Internal tools, workflow automation, and custom dashboards that replace spreadsheets and manual processes.</p>
+    </div>
+    <div class="industry-card fade-up">
+      <div class="industry-icon">🚀</div>
+      <h3>Startups</h3>
+      <p>MVPs built fast, with clean architecture that scales. From idea to live product in weeks, not months.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CASE STUDY ===== -->
+<section id="case-study">
+  <div class="section-header">
+    <span class="section-label">Featured Case Study</span>
+    <h2 class="section-title">How we scaled a barbershop<br />to 10,000+ bookings/day</h2>
+  </div>
+  <div class="case-study-inner">
+    <div class="case-study-content">
+      <div class="case-label">The Problem</div>
+      <p>Minore Barbershop was managing appointments over the phone across two locations. Staff were overwhelmed, double-bookings were common, and there was no visibility into daily revenue or barber performance.</p>
+      <div class="case-label" style="margin-top:1.5rem">The Solution</div>
+      <p>We built a complete appointment platform with QR code access, real-time dashboards, automated emails, and a CI/CD pipeline. Deployed on Render with PostgreSQL and Sentry monitoring.</p>
+      <div class="case-metrics">
+        <div class="metric">
+          <div class="metric-val">10K+</div>
+          <div class="metric-label">Appointments / Day</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">99.9%</div>
+          <div class="metric-label">Uptime</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">200x</div>
+          <div class="metric-label">Query Speed Gain</div>
+        </div>
+        <div class="metric">
+          <div class="metric-val">0</div>
+          <div class="metric-label">Double Bookings</div>
+        </div>
+      </div>
+    </div>
+    <div class="case-visual">✂️</div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="contact-wrapper">
+    <div class="contact-info">
+      <span class="section-label">Contact</span>
+      <h2>Let's build something together.</h2>
+      <p>Tell us about your project. We'll get back to you within 24 hours to schedule a discovery call and discuss what we can build for you.</p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-item-icon">📧</div>
+          lens.ordr@gmail.com
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">⚡</div>
+          Response within 24 hours
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🌍</div>
+          Working with clients worldwide
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contact-form" action="https://formspree.io/f/maqpdjdb" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" placeholder="John Smith" required />
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" placeholder="john@company.com" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Company / Business</label>
+          <input type="text" placeholder="Your company name" />
+        </div>
+        <div class="form-group">
+          <label>Budget Range</label>
+          <select>
+            <option value="">Select budget</option>
+            <option>Under €1,000</option>
+            <option>€1,000 – €5,000</option>
+            <option>€5,000 – €15,000</option>
+            <option>€15,000+</option>
+            <option>Let's discuss</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Project Type *</label>
+          <select required>
+            <option value="">Select type</option>
+            <option>Workflow Automation</option>
+            <option>Web Application</option>
+            <option>Business Dashboard</option>
+            <option>QR / Mobile Experience</option>
+            <option>System Integration</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Timeline</label>
+          <select>
+            <option value="">Select timeline</option>
+            <option>ASAP</option>
+            <option>1 – 2 months</option>
+            <option>3 – 6 months</option>
+            <option>Flexible</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Project Description *</label>
+        <textarea placeholder="Describe what you want to build, the problem you're solving, and any specific requirements..." required></textarea>
+      </div>
+      <button type="submit" class="form-subm
