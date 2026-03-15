@@ -142,20 +142,28 @@ form.addEventListener('submit', async e => {
   const btn = form.querySelector('.form-submit');
   btn.textContent = 'Sending...';
   btn.disabled = true;
-  const res = await fetch(form.action, {
-    method: 'POST',
-    body: new FormData(form),
-    headers: { 'Accept': 'application/json' }
-  });
-  if (res.ok) {
-    form.innerHTML = `
-      <div class="form-success" style="display:block">
-        <div style="font-size:2.5rem;margin-bottom:1rem">✅</div>
-        <h3 style="color:var(--white);margin-bottom:0.5rem">Message received!</h3>
-        <p style="color:var(--muted)">We'll get back to you within 24 hours to discuss your project.</p>
-      </div>`;
-  } else {
-    btn.textContent = 'Something went wrong. Try again.';
+  try {
+    const res = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    const json = await res.json();
+    if (res.ok) {
+      form.innerHTML = `
+        <div class="form-success" style="display:block">
+          <div style="font-size:2.5rem;margin-bottom:1rem">✅</div>
+          <h3 style="color:var(--white);margin-bottom:0.5rem">Message received!</h3>
+          <p style="color:var(--muted)">We'll get back to you within 24 hours to discuss your project.</p>
+        </div>`;
+    } else {
+      console.error('Formspree error:', json);
+      btn.textContent = json.error || 'Something went wrong. Try again.';
+      btn.disabled = false;
+    }
+  } catch (err) {
+    console.error('Network error:', err);
+    btn.textContent = 'Network error. Try again.';
     btn.disabled = false;
   }
 });
